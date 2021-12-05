@@ -76,7 +76,7 @@ st.markdown('$S_i$ is the set of all points assigned to the $i$th cluster and $|
 from sklearn.cluster import KMeans
 import numpy as np
 import matplotlib.pyplot as plt
-K = st.slider('请选择参数K',min_value=1,max_value=100,value=5)
+K = st.slider('Please decide the parameter K',min_value=1,max_value=100,value=5)
 K=int(K)
 X=dfrd.loc[:,'LATITUDE':'LONGITUDE']
 k_means=KMeans(K)
